@@ -6,7 +6,7 @@ students = {
 
 print("Students:", list(students.keys()))
 
-name = input("Which student do you want to update? ")
+name = input("which student do you want to update? ")
 
 if name in students:
     choice = input("Do you want to edit 'age' or 'grades'? ").lower()
@@ -17,7 +17,7 @@ if name in students:
         print("updated!")
 
     elif choice == "grades":
-        new_grades = input("Enter new grades separated by commas: ")
+        new_grades = input("enter new grades separated by commas: ")
         grades_list = []
         for g in new_grades.split(","):
             grades_list.append(int(g))
@@ -25,7 +25,7 @@ if name in students:
         print("updated!")
 
     else:
-        print("Invalid choice. Only 'age' or 'grades' allowed.")
+        print("invalid choice. Only 'age' or 'grades' allowed.")
 else:
     print("Student not found.")
 
