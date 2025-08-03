@@ -9,7 +9,6 @@ print("Students:", list(students.keys()))
 name = input("Which student do you want to update? ")
 
 if name in students:
-    # Ask what to edit
     choice = input("Do you want to edit 'age' or 'grades'? ").lower()
 
     if choice == "age":
